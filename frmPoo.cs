@@ -10,9 +10,9 @@ using System.Windows.Forms;
 
 namespace pryPonceDeLeonMartinaEstrucDatos
 {
-    public partial class Form1 : Form
+    public partial class frmPoo : Form
     {
-        public Form1()
+        public frmPoo()
         {
             InitializeComponent();
         }
