@@ -27,7 +27,7 @@ namespace pryPonceDeLeonMartinaEstrucDatos
         private void salirToolStripMenuItem_Click(object sender, EventArgs e)
         {
             frmMain frm = new frmMain();
-            frm.Close();
+            this.Close();
         }
 
         private void menuStrip1_Paint(object sender, PaintEventArgs e)
@@ -47,6 +47,19 @@ namespace pryPonceDeLeonMartinaEstrucDatos
         {
             menuStrip1.Paint += menuStrip1_Paint;
            
+        }
+
+        private void deshacerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmCola frm = new frmCola();
+
+            frm.Show();
+        }
+
+        private void pOOToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPoo frm = new frmPoo();  
+            frm.Show(); 
         }
     }
 }
