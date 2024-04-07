@@ -16,5 +16,10 @@ namespace pryPonceDeLeonMartinaEstrucDatos
         {
             InitializeComponent();
         }
+
+        private void frmPoo_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -31,27 +31,27 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmCola));
             this.picCola = new System.Windows.Forms.PictureBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.lstLista = new System.Windows.Forms.ListBox();
-            this.grillaCola = new System.Windows.Forms.DataGridView();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.txtTramite = new System.Windows.Forms.TextBox();
+            this.txtNombre = new System.Windows.Forms.TextBox();
+            this.txtCodigo = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
+            this.btnAgregar = new System.Windows.Forms.Button();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label1 = new System.Windows.Forms.Label();
+            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.lblTramite = new System.Windows.Forms.Label();
+            this.btnEliminar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.btnAgregar = new System.Windows.Forms.Button();
-            this.btnEliminar = new System.Windows.Forms.Button();
             this.lblCodigo = new System.Windows.Forms.Label();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.lblTramite = new System.Windows.Forms.Label();
-            this.txtCodigo = new System.Windows.Forms.TextBox();
-            this.txtNombre = new System.Windows.Forms.TextBox();
-            this.txtTramite = new System.Windows.Forms.TextBox();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.grillaCola = new System.Windows.Forms.DataGridView();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.lstLista = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.picCola)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -85,6 +85,67 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nuevo Elemento";
             // 
+            // txtTramite
+            // 
+            this.txtTramite.Location = new System.Drawing.Point(107, 179);
+            this.txtTramite.Name = "txtTramite";
+            this.txtTramite.Size = new System.Drawing.Size(100, 20);
+            this.txtTramite.TabIndex = 15;
+            // 
+            // txtNombre
+            // 
+            this.txtNombre.Location = new System.Drawing.Point(105, 111);
+            this.txtNombre.Name = "txtNombre";
+            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.TabIndex = 14;
+            // 
+            // txtCodigo
+            // 
+            this.txtCodigo.Location = new System.Drawing.Point(105, 53);
+            this.txtCodigo.Name = "txtCodigo";
+            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.TabIndex = 13;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(23, 181);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(74, 18);
+            this.label3.TabIndex = 4;
+            this.label3.Text = "Trámite:";
+            // 
+            // btnAgregar
+            // 
+            this.btnAgregar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnAgregar.Location = new System.Drawing.Point(52, 270);
+            this.btnAgregar.Name = "btnAgregar";
+            this.btnAgregar.Size = new System.Drawing.Size(114, 39);
+            this.btnAgregar.TabIndex = 8;
+            this.btnAgregar.Text = "Agregar";
+            this.btnAgregar.UseVisualStyleBackColor = false;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(21, 113);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(76, 18);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Nombre:";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(21, 51);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(69, 18);
+            this.label1.TabIndex = 2;
+            this.label1.Text = "Código:";
+            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.lblTramite);
@@ -101,72 +162,24 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Elemento Eliminado";
             // 
-            // groupBox3
+            // lblTramite
             // 
-            this.groupBox3.Controls.Add(this.grillaCola);
-            this.groupBox3.Controls.Add(this.lstLista);
-            this.groupBox3.Location = new System.Drawing.Point(27, 410);
-            this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(868, 268);
-            this.groupBox3.TabIndex = 0;
-            this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Listado en una Lista y una Grilla";
+            this.lblTramite.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblTramite.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblTramite.Location = new System.Drawing.Point(104, 179);
+            this.lblTramite.Name = "lblTramite";
+            this.lblTramite.Size = new System.Drawing.Size(100, 22);
+            this.lblTramite.TabIndex = 12;
             // 
-            // lstLista
+            // btnEliminar
             // 
-            this.lstLista.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.lstLista.FormattingEnabled = true;
-            this.lstLista.ItemHeight = 12;
-            this.lstLista.Location = new System.Drawing.Point(17, 31);
-            this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(333, 220);
-            this.lstLista.TabIndex = 0;
-            // 
-            // grillaCola
-            // 
-            this.grillaCola.AllowUserToAddRows = false;
-            this.grillaCola.AllowUserToDeleteRows = false;
-            this.grillaCola.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grillaCola.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.clmCodigo,
-            this.clmNombre,
-            this.clmTramite});
-            this.grillaCola.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.grillaCola.Location = new System.Drawing.Point(392, 31);
-            this.grillaCola.Name = "grillaCola";
-            this.grillaCola.ReadOnly = true;
-            this.grillaCola.Size = new System.Drawing.Size(460, 220);
-            this.grillaCola.TabIndex = 1;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(21, 51);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(69, 18);
-            this.label1.TabIndex = 2;
-            this.label1.Text = "Código:";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(21, 113);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(76, 18);
-            this.label2.TabIndex = 3;
-            this.label2.Text = "Nombre:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(23, 181);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(74, 18);
-            this.label3.TabIndex = 4;
-            this.label3.Text = "Trámite:";
+            this.btnEliminar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnEliminar.Location = new System.Drawing.Point(51, 270);
+            this.btnEliminar.Name = "btnEliminar";
+            this.btnEliminar.Size = new System.Drawing.Size(114, 39);
+            this.btnEliminar.TabIndex = 9;
+            this.btnEliminar.Text = "Eliminar";
+            this.btnEliminar.UseVisualStyleBackColor = false;
             // 
             // label4
             // 
@@ -177,6 +190,15 @@
             this.label4.Size = new System.Drawing.Size(69, 18);
             this.label4.TabIndex = 5;
             this.label4.Text = "Código:";
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblNombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblNombre.Location = new System.Drawing.Point(102, 115);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(100, 22);
+            this.lblNombre.TabIndex = 11;
             // 
             // label5
             // 
@@ -198,26 +220,6 @@
             this.label6.TabIndex = 7;
             this.label6.Text = "Trámite:";
             // 
-            // btnAgregar
-            // 
-            this.btnAgregar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAgregar.Location = new System.Drawing.Point(52, 270);
-            this.btnAgregar.Name = "btnAgregar";
-            this.btnAgregar.Size = new System.Drawing.Size(114, 39);
-            this.btnAgregar.TabIndex = 8;
-            this.btnAgregar.Text = "Agregar";
-            this.btnAgregar.UseVisualStyleBackColor = false;
-            // 
-            // btnEliminar
-            // 
-            this.btnEliminar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnEliminar.Location = new System.Drawing.Point(51, 270);
-            this.btnEliminar.Name = "btnEliminar";
-            this.btnEliminar.Size = new System.Drawing.Size(114, 39);
-            this.btnEliminar.TabIndex = 9;
-            this.btnEliminar.Text = "Eliminar";
-            this.btnEliminar.UseVisualStyleBackColor = false;
-            // 
             // lblCodigo
             // 
             this.lblCodigo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -227,44 +229,33 @@
             this.lblCodigo.Size = new System.Drawing.Size(100, 22);
             this.lblCodigo.TabIndex = 10;
             // 
-            // lblNombre
+            // groupBox3
             // 
-            this.lblNombre.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.lblNombre.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblNombre.Location = new System.Drawing.Point(102, 115);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(100, 22);
-            this.lblNombre.TabIndex = 11;
+            this.groupBox3.Controls.Add(this.grillaCola);
+            this.groupBox3.Controls.Add(this.lstLista);
+            this.groupBox3.Location = new System.Drawing.Point(27, 410);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(868, 268);
+            this.groupBox3.TabIndex = 0;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Listado en una Lista y una Grilla";
             // 
-            // lblTramite
+            // grillaCola
             // 
-            this.lblTramite.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.lblTramite.Font = new System.Drawing.Font("Arial Rounded MT Bold", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lblTramite.Location = new System.Drawing.Point(104, 179);
-            this.lblTramite.Name = "lblTramite";
-            this.lblTramite.Size = new System.Drawing.Size(100, 22);
-            this.lblTramite.TabIndex = 12;
-            // 
-            // txtCodigo
-            // 
-            this.txtCodigo.Location = new System.Drawing.Point(105, 53);
-            this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
-            this.txtCodigo.TabIndex = 13;
-            // 
-            // txtNombre
-            // 
-            this.txtNombre.Location = new System.Drawing.Point(105, 111);
-            this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
-            this.txtNombre.TabIndex = 14;
-            // 
-            // txtTramite
-            // 
-            this.txtTramite.Location = new System.Drawing.Point(107, 179);
-            this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(100, 20);
-            this.txtTramite.TabIndex = 15;
+            this.grillaCola.AllowUserToAddRows = false;
+            this.grillaCola.AllowUserToDeleteRows = false;
+            this.grillaCola.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.grillaCola.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grillaCola.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.clmCodigo,
+            this.clmNombre,
+            this.clmTramite});
+            this.grillaCola.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.grillaCola.Location = new System.Drawing.Point(392, 31);
+            this.grillaCola.Name = "grillaCola";
+            this.grillaCola.ReadOnly = true;
+            this.grillaCola.Size = new System.Drawing.Size(460, 220);
+            this.grillaCola.TabIndex = 1;
             // 
             // clmCodigo
             // 
@@ -284,6 +275,16 @@
             this.clmTramite.HeaderText = "Trámite";
             this.clmTramite.Name = "clmTramite";
             this.clmTramite.ReadOnly = true;
+            // 
+            // lstLista
+            // 
+            this.lstLista.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lstLista.FormattingEnabled = true;
+            this.lstLista.ItemHeight = 12;
+            this.lstLista.Location = new System.Drawing.Point(17, 31);
+            this.lstLista.Name = "lstLista";
+            this.lstLista.Size = new System.Drawing.Size(333, 220);
+            this.lstLista.TabIndex = 0;
             // 
             // frmCola
             // 
