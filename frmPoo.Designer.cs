@@ -91,7 +91,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(47, 62);
+            this.label4.Location = new System.Drawing.Point(29, 47);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(70, 18);
             this.label4.TabIndex = 4;
@@ -121,7 +121,7 @@
             // 
             // txtImporte
             // 
-            this.txtImporte.Location = new System.Drawing.Point(157, 59);
+            this.txtImporte.Location = new System.Drawing.Point(157, 47);
             this.txtImporte.Name = "txtImporte";
             this.txtImporte.Size = new System.Drawing.Size(150, 26);
             this.txtImporte.TabIndex = 8;
@@ -129,7 +129,7 @@
             // btnComprar
             // 
             this.btnComprar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnComprar.Location = new System.Drawing.Point(50, 96);
+            this.btnComprar.Location = new System.Drawing.Point(32, 96);
             this.btnComprar.Name = "btnComprar";
             this.btnComprar.Size = new System.Drawing.Size(95, 36);
             this.btnComprar.TabIndex = 9;

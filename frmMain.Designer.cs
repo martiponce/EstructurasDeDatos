@@ -84,27 +84,27 @@
             // toolStripSeparator
             // 
             this.toolStripSeparator.Name = "toolStripSeparator";
-            this.toolStripSeparator.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator.Size = new System.Drawing.Size(152, 6);
             // 
             // vistapreviadeimpresiónToolStripMenuItem
             // 
             this.vistapreviadeimpresiónToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("vistapreviadeimpresiónToolStripMenuItem.Image")));
             this.vistapreviadeimpresiónToolStripMenuItem.ImageTransparentColor = System.Drawing.Color.Magenta;
             this.vistapreviadeimpresiónToolStripMenuItem.Name = "vistapreviadeimpresiónToolStripMenuItem";
-            this.vistapreviadeimpresiónToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.vistapreviadeimpresiónToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.vistapreviadeimpresiónToolStripMenuItem.Text = "&Datos Alumno";
             this.vistapreviadeimpresiónToolStripMenuItem.Click += new System.EventHandler(this.vistapreviadeimpresiónToolStripMenuItem_Click);
             // 
             // toolStripSeparator2
             // 
             this.toolStripSeparator2.Name = "toolStripSeparator2";
-            this.toolStripSeparator2.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator2.Size = new System.Drawing.Size(152, 6);
             // 
             // salirToolStripMenuItem
             // 
             this.salirToolStripMenuItem.Image = ((System.Drawing.Image)(resources.GetObject("salirToolStripMenuItem.Image")));
             this.salirToolStripMenuItem.Name = "salirToolStripMenuItem";
-            this.salirToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.salirToolStripMenuItem.Size = new System.Drawing.Size(155, 22);
             this.salirToolStripMenuItem.Text = "&Salir";
             this.salirToolStripMenuItem.Click += new System.EventHandler(this.salirToolStripMenuItem_Click);
             // 
@@ -132,6 +132,7 @@
             this.rehacerToolStripMenuItem.Name = "rehacerToolStripMenuItem";
             this.rehacerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.rehacerToolStripMenuItem.Text = "&Pila";
+            this.rehacerToolStripMenuItem.Click += new System.EventHandler(this.rehacerToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -209,7 +210,7 @@
             // pOOToolStripMenuItem
             // 
             this.pOOToolStripMenuItem.Name = "pOOToolStripMenuItem";
-            this.pOOToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.pOOToolStripMenuItem.Size = new System.Drawing.Size(102, 22);
             this.pOOToolStripMenuItem.Text = "&POO";
             this.pOOToolStripMenuItem.Click += new System.EventHandler(this.pOOToolStripMenuItem_Click);
             // 

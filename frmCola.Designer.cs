@@ -51,7 +51,7 @@
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lstLista = new System.Windows.Forms.ListBox();
+            this.lstCola = new System.Windows.Forms.ListBox();
             ((System.ComponentModel.ISupportInitialize)(this.picCola)).BeginInit();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
@@ -78,6 +78,7 @@
             this.groupBox1.Controls.Add(this.btnAgregar);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
+            this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox1.Location = new System.Drawing.Point(419, 21);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(220, 350);
@@ -89,21 +90,21 @@
             // 
             this.txtTramite.Location = new System.Drawing.Point(107, 179);
             this.txtTramite.Name = "txtTramite";
-            this.txtTramite.Size = new System.Drawing.Size(100, 20);
+            this.txtTramite.Size = new System.Drawing.Size(100, 23);
             this.txtTramite.TabIndex = 15;
             // 
             // txtNombre
             // 
             this.txtNombre.Location = new System.Drawing.Point(105, 111);
             this.txtNombre.Name = "txtNombre";
-            this.txtNombre.Size = new System.Drawing.Size(100, 20);
+            this.txtNombre.Size = new System.Drawing.Size(100, 23);
             this.txtNombre.TabIndex = 14;
             // 
             // txtCodigo
             // 
             this.txtCodigo.Location = new System.Drawing.Point(105, 53);
             this.txtCodigo.Name = "txtCodigo";
-            this.txtCodigo.Size = new System.Drawing.Size(100, 20);
+            this.txtCodigo.Size = new System.Drawing.Size(100, 23);
             this.txtCodigo.TabIndex = 13;
             // 
             // label3
@@ -155,6 +156,7 @@
             this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.lblCodigo);
+            this.groupBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(675, 21);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(220, 350);
@@ -232,7 +234,8 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.grillaCola);
-            this.groupBox3.Controls.Add(this.lstLista);
+            this.groupBox3.Controls.Add(this.lstCola);
+            this.groupBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(27, 410);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(868, 268);
@@ -276,15 +279,15 @@
             this.clmTramite.Name = "clmTramite";
             this.clmTramite.ReadOnly = true;
             // 
-            // lstLista
+            // lstCola
             // 
-            this.lstLista.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.lstLista.FormattingEnabled = true;
-            this.lstLista.ItemHeight = 12;
-            this.lstLista.Location = new System.Drawing.Point(17, 31);
-            this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(333, 220);
-            this.lstLista.TabIndex = 0;
+            this.lstCola.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lstCola.FormattingEnabled = true;
+            this.lstCola.ItemHeight = 15;
+            this.lstCola.Location = new System.Drawing.Point(17, 31);
+            this.lstCola.Name = "lstCola";
+            this.lstCola.Size = new System.Drawing.Size(333, 214);
+            this.lstCola.TabIndex = 0;
             // 
             // frmCola
             // 
@@ -301,7 +304,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
             this.Name = "frmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Estructura Dinámica no Lineal: Cola";
+            this.Text = "Estructura Dinámica  Lineal: Cola";
             ((System.ComponentModel.ISupportInitialize)(this.picCola)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -320,7 +323,7 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView grillaCola;
-        private System.Windows.Forms.ListBox lstLista;
+        private System.Windows.Forms.ListBox lstCola;
         private System.Windows.Forms.TextBox txtTramite;
         private System.Windows.Forms.TextBox txtNombre;
         private System.Windows.Forms.TextBox txtCodigo;

@@ -61,6 +61,12 @@ namespace pryPonceDeLeonMartinaEstrucDatos
             frmPoo frm = new frmPoo();  
             frm.Show(); 
         }
+
+        private void rehacerToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmPila frm = new frmPila();
+            frm.Show();
+        }
     }
 }
     
