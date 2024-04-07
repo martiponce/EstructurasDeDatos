@@ -30,17 +30,17 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPoo));
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.lblDeuda = new System.Windows.Forms.Label();
+            this.lblNombre = new System.Windows.Forms.Label();
+            this.lblCodigo = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.lblCodigo = new System.Windows.Forms.Label();
-            this.txtImporte = new System.Windows.Forms.TextBox();
-            this.btnComprar = new System.Windows.Forms.Button();
             this.btnPagar = new System.Windows.Forms.Button();
-            this.lblNombre = new System.Windows.Forms.Label();
-            this.llblDeuda = new System.Windows.Forms.Label();
+            this.btnComprar = new System.Windows.Forms.Button();
+            this.txtImporte = new System.Windows.Forms.TextBox();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
@@ -48,7 +48,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.label3);
-            this.groupBox1.Controls.Add(this.llblDeuda);
+            this.groupBox1.Controls.Add(this.lblDeuda);
             this.groupBox1.Controls.Add(this.lblNombre);
             this.groupBox1.Controls.Add(this.lblCodigo);
             this.groupBox1.Controls.Add(this.label1);
@@ -60,6 +60,39 @@
             this.groupBox1.TabIndex = 0;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Datos del Cliente";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Location = new System.Drawing.Point(26, 201);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(65, 18);
+            this.label3.TabIndex = 3;
+            this.label3.Text = "Deuda:";
+            // 
+            // lblDeuda
+            // 
+            this.lblDeuda.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblDeuda.Location = new System.Drawing.Point(157, 201);
+            this.lblDeuda.Name = "lblDeuda";
+            this.lblDeuda.Size = new System.Drawing.Size(150, 20);
+            this.lblDeuda.TabIndex = 5;
+            // 
+            // lblNombre
+            // 
+            this.lblNombre.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblNombre.Location = new System.Drawing.Point(157, 126);
+            this.lblNombre.Name = "lblNombre";
+            this.lblNombre.Size = new System.Drawing.Size(150, 20);
+            this.lblNombre.TabIndex = 5;
+            // 
+            // lblCodigo
+            // 
+            this.lblCodigo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lblCodigo.Location = new System.Drawing.Point(157, 56);
+            this.lblCodigo.Name = "lblCodigo";
+            this.lblCodigo.Size = new System.Drawing.Size(150, 20);
+            this.lblCodigo.TabIndex = 5;
             // 
             // label1
             // 
@@ -78,15 +111,6 @@
             this.label2.Size = new System.Drawing.Size(76, 18);
             this.label2.TabIndex = 2;
             this.label2.Text = "Nombre:";
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(26, 201);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(65, 18);
-            this.label3.TabIndex = 3;
-            this.label3.Text = "Deuda:";
             // 
             // label4
             // 
@@ -111,20 +135,16 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Acciones del Cliente";
             // 
-            // lblCodigo
+            // btnPagar
             // 
-            this.lblCodigo.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.lblCodigo.Location = new System.Drawing.Point(157, 56);
-            this.lblCodigo.Name = "lblCodigo";
-            this.lblCodigo.Size = new System.Drawing.Size(150, 20);
-            this.lblCodigo.TabIndex = 5;
-            // 
-            // txtImporte
-            // 
-            this.txtImporte.Location = new System.Drawing.Point(157, 47);
-            this.txtImporte.Name = "txtImporte";
-            this.txtImporte.Size = new System.Drawing.Size(150, 26);
-            this.txtImporte.TabIndex = 8;
+            this.btnPagar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnPagar.Location = new System.Drawing.Point(212, 96);
+            this.btnPagar.Name = "btnPagar";
+            this.btnPagar.Size = new System.Drawing.Size(95, 36);
+            this.btnPagar.TabIndex = 10;
+            this.btnPagar.Text = "Pagar";
+            this.btnPagar.UseVisualStyleBackColor = false;
+            this.btnPagar.Click += new System.EventHandler(this.btnPagar_Click_1);
             // 
             // btnComprar
             // 
@@ -135,32 +155,14 @@
             this.btnComprar.TabIndex = 9;
             this.btnComprar.Text = "Comprar";
             this.btnComprar.UseVisualStyleBackColor = false;
+            this.btnComprar.Click += new System.EventHandler(this.btnComprar_Click_1);
             // 
-            // btnPagar
+            // txtImporte
             // 
-            this.btnPagar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnPagar.Location = new System.Drawing.Point(212, 96);
-            this.btnPagar.Name = "btnPagar";
-            this.btnPagar.Size = new System.Drawing.Size(95, 36);
-            this.btnPagar.TabIndex = 10;
-            this.btnPagar.Text = "Pagar";
-            this.btnPagar.UseVisualStyleBackColor = false;
-            // 
-            // lblNombre
-            // 
-            this.lblNombre.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.lblNombre.Location = new System.Drawing.Point(157, 118);
-            this.lblNombre.Name = "lblNombre";
-            this.lblNombre.Size = new System.Drawing.Size(150, 20);
-            this.lblNombre.TabIndex = 5;
-            // 
-            // llblDeuda
-            // 
-            this.llblDeuda.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.llblDeuda.Location = new System.Drawing.Point(157, 193);
-            this.llblDeuda.Name = "llblDeuda";
-            this.llblDeuda.Size = new System.Drawing.Size(150, 20);
-            this.llblDeuda.TabIndex = 5;
+            this.txtImporte.Location = new System.Drawing.Point(157, 47);
+            this.txtImporte.Name = "txtImporte";
+            this.txtImporte.Size = new System.Drawing.Size(150, 26);
+            this.txtImporte.TabIndex = 8;
             // 
             // frmPoo
             // 
@@ -197,7 +199,7 @@
         private System.Windows.Forms.Button btnPagar;
         private System.Windows.Forms.Button btnComprar;
         private System.Windows.Forms.TextBox txtImporte;
-        private System.Windows.Forms.Label llblDeuda;
+        private System.Windows.Forms.Label lblDeuda;
         private System.Windows.Forms.Label lblNombre;
     }
 }
