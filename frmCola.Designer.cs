@@ -120,12 +120,13 @@
             // btnAgregar
             // 
             this.btnAgregar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnAgregar.Location = new System.Drawing.Point(52, 270);
+            this.btnAgregar.Location = new System.Drawing.Point(52, 258);
             this.btnAgregar.Name = "btnAgregar";
             this.btnAgregar.Size = new System.Drawing.Size(114, 39);
             this.btnAgregar.TabIndex = 8;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label2
             // 
@@ -176,12 +177,13 @@
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnEliminar.Location = new System.Drawing.Point(51, 270);
+            this.btnEliminar.Location = new System.Drawing.Point(54, 258);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(114, 39);
             this.btnEliminar.TabIndex = 9;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label4
             // 
@@ -254,7 +256,7 @@
             this.clmNombre,
             this.clmTramite});
             this.grillaCola.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.grillaCola.Location = new System.Drawing.Point(392, 31);
+            this.grillaCola.Location = new System.Drawing.Point(390, 31);
             this.grillaCola.Name = "grillaCola";
             this.grillaCola.ReadOnly = true;
             this.grillaCola.Size = new System.Drawing.Size(460, 220);
@@ -305,6 +307,7 @@
             this.Name = "frmCola";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinámica  Lineal: Cola";
+            this.Load += new System.EventHandler(this.frmCola_Load);
             ((System.ComponentModel.ISupportInitialize)(this.picCola)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();

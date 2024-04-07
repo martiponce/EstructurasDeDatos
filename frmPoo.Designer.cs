@@ -163,6 +163,7 @@
             this.txtImporte.Name = "txtImporte";
             this.txtImporte.Size = new System.Drawing.Size(150, 26);
             this.txtImporte.TabIndex = 8;
+            this.txtImporte.TextChanged += new System.EventHandler(this.txtImporte_TextChanged);
             // 
             // frmPoo
             // 

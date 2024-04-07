@@ -59,5 +59,25 @@ namespace pryPonceDeLeonMartinaEstrucDatos
                 lblDeuda.Text = objCliente.Deuda.ToString();
             
         }
+
+        private void txtImporte_TextChanged(object sender, EventArgs e)
+        {
+            verificarTexto();
+        }
+
+        private void verificarTexto()
+        {            
+            if (txtImporte.Text == "")
+            {
+                btnComprar.Enabled = false;
+                btnPagar.Enabled = false;
+
+            }else
+            {
+                btnComprar.Enabled = true;
+                btnPagar.Enabled = true;
+            }
+        }
+            
     }
 }
