@@ -33,14 +33,14 @@ namespace pryPonceDeLeonMartinaEstrucDatos
             }
             else
             {
-                Nuevo.Siguiente = Nuevo;
+                Nuevo.Siguiente = Primero;
                 Primero = Nuevo;
             }
         }
 
         public void Eliminar()
         {
-            if (Primero == null)
+            if (Primero != null)
             {
 
                 Primero = Primero.Siguiente;
