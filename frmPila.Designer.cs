@@ -30,7 +30,7 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmPila));
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.grillaCola = new System.Windows.Forms.DataGridView();
+            this.grillaPila = new System.Windows.Forms.DataGridView();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -53,7 +53,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.picCola = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grillaCola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaPila)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picCola)).BeginInit();
@@ -61,7 +61,7 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.grillaCola);
+            this.groupBox3.Controls.Add(this.grillaPila);
             this.groupBox3.Controls.Add(this.lstPila);
             this.groupBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(22, 416);
@@ -71,22 +71,22 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Listado en una Lista y una Grilla";
             // 
-            // grillaCola
+            // grillaPila
             // 
-            this.grillaCola.AllowUserToAddRows = false;
-            this.grillaCola.AllowUserToDeleteRows = false;
-            this.grillaCola.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.grillaCola.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grillaCola.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grillaPila.AllowUserToAddRows = false;
+            this.grillaPila.AllowUserToDeleteRows = false;
+            this.grillaPila.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.grillaPila.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grillaPila.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmCodigo,
             this.clmNombre,
             this.clmTramite});
-            this.grillaCola.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.grillaCola.Location = new System.Drawing.Point(392, 31);
-            this.grillaCola.Name = "grillaCola";
-            this.grillaCola.ReadOnly = true;
-            this.grillaCola.Size = new System.Drawing.Size(460, 220);
-            this.grillaCola.TabIndex = 1;
+            this.grillaPila.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.grillaPila.Location = new System.Drawing.Point(392, 31);
+            this.grillaPila.Name = "grillaPila";
+            this.grillaPila.ReadOnly = true;
+            this.grillaPila.Size = new System.Drawing.Size(460, 220);
+            this.grillaPila.TabIndex = 1;
             // 
             // clmCodigo
             // 
@@ -152,6 +152,7 @@
             this.btnEliminar.TabIndex = 9;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label4
             // 
@@ -258,6 +259,7 @@
             this.btnAgregar.TabIndex = 8;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label2
             // 
@@ -294,7 +296,7 @@
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.ClientSize = new System.Drawing.Size(934, 711);
+            this.ClientSize = new System.Drawing.Size(934, 701);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -308,7 +310,7 @@
             this.Text = "Estructura Dinámica Lineal: Pila";
             this.Load += new System.EventHandler(this.frmPila_Load);
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grillaCola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaPila)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -321,7 +323,7 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView grillaCola;
+        private System.Windows.Forms.DataGridView grillaPila;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmTramite;
