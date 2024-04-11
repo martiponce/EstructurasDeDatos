@@ -17,29 +17,30 @@ namespace pryPonceDeLeonMartinaEstrucDatos
             get { return pri; }
             set { pri = value; }    
         }
-        public void Agregar (clsNodo Nuevo)
+        public void Agregar(clsNodo Nuevo)
         {
             if (Primero == null)
             {
                 Primero = Nuevo;
-
             }
             else
             {
-                if (Nuevo.Codigo <=Primero.Codigo)
+                if (Nuevo.Codigo <= Primero.Codigo)
                 {
                     Nuevo.Siguiente = Primero;
                     Primero = Nuevo;
-                }else
+                }
+                else
                 {
                     clsNodo aux = Primero;
                     clsNodo ant = Primero;
 
-                    while (Nuevo.Codigo > Primero.Codigo)
+                    while (aux != null && Nuevo.Codigo > aux.Codigo)
                     {
                         ant = aux;
                         aux = aux.Siguiente;
                     }
+
                     ant.Siguiente = Nuevo;
                     Nuevo.Siguiente = aux;
                 }
@@ -92,7 +93,7 @@ namespace pryPonceDeLeonMartinaEstrucDatos
         public void Recorrer(ComboBox Combo)
         {
             clsNodo aux = Primero;
-            Combo.Items.Clear();
+            Combo.Items.Clear(); // Limpiar items existentes antes de agregar nuevos
             while (aux != null)
             {
                 Combo.Items.Add(aux.Codigo);

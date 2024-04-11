@@ -34,8 +34,9 @@
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lstLista = new System.Windows.Forms.ListBox();
+            this.lstListaSimple = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cboLista = new System.Windows.Forms.ComboBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.txtTramite = new System.Windows.Forms.TextBox();
@@ -46,7 +47,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.picCola = new System.Windows.Forms.PictureBox();
-            this.cboLista = new System.Windows.Forms.ComboBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaSimple)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -57,7 +57,7 @@
             // groupBox3
             // 
             this.groupBox3.Controls.Add(this.grillaListaSimple);
-            this.groupBox3.Controls.Add(this.lstLista);
+            this.groupBox3.Controls.Add(this.lstListaSimple);
             this.groupBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(33, 411);
             this.groupBox3.Name = "groupBox3";
@@ -102,15 +102,15 @@
             this.clmTramite.Name = "clmTramite";
             this.clmTramite.ReadOnly = true;
             // 
-            // lstLista
+            // lstListaSimple
             // 
-            this.lstLista.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.lstLista.FormattingEnabled = true;
-            this.lstLista.ItemHeight = 15;
-            this.lstLista.Location = new System.Drawing.Point(17, 31);
-            this.lstLista.Name = "lstLista";
-            this.lstLista.Size = new System.Drawing.Size(333, 214);
-            this.lstLista.TabIndex = 0;
+            this.lstListaSimple.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.lstListaSimple.FormattingEnabled = true;
+            this.lstListaSimple.ItemHeight = 15;
+            this.lstListaSimple.Location = new System.Drawing.Point(17, 31);
+            this.lstListaSimple.Name = "lstListaSimple";
+            this.lstListaSimple.Size = new System.Drawing.Size(333, 214);
+            this.lstListaSimple.TabIndex = 0;
             // 
             // groupBox2
             // 
@@ -123,6 +123,15 @@
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Elemento Eliminado";
+            // 
+            // cboLista
+            // 
+            this.cboLista.FormattingEnabled = true;
+            this.cboLista.Location = new System.Drawing.Point(44, 179);
+            this.cboLista.Name = "cboLista";
+            this.cboLista.Size = new System.Drawing.Size(130, 23);
+            this.cboLista.TabIndex = 10;
+            this.cboLista.SelectedIndexChanged += new System.EventHandler(this.cboLista_SelectedIndexChanged);
             // 
             // btnEliminar
             // 
@@ -224,15 +233,6 @@
             this.picCola.TabIndex = 8;
             this.picCola.TabStop = false;
             // 
-            // cboLista
-            // 
-            this.cboLista.FormattingEnabled = true;
-            this.cboLista.Location = new System.Drawing.Point(44, 179);
-            this.cboLista.Name = "cboLista";
-            this.cboLista.Size = new System.Drawing.Size(130, 23);
-            this.cboLista.TabIndex = 10;
-            this.cboLista.SelectedIndexChanged += new System.EventHandler(this.cboLista_SelectedIndexChanged);
-            // 
             // frmListaSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -249,6 +249,7 @@
             this.Name = "frmListaSimple";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinámica Lineal: Lista Simple";
+            this.Load += new System.EventHandler(this.frmListaSimple_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaSimple)).EndInit();
             this.groupBox2.ResumeLayout(false);
@@ -266,7 +267,7 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn clmCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmTramite;
-        private System.Windows.Forms.ListBox lstLista;
+        private System.Windows.Forms.ListBox lstListaSimple;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.ComboBox cboLista;
         private System.Windows.Forms.Button btnEliminar;

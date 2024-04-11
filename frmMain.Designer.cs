@@ -144,12 +144,14 @@
             this.seleccionartodoToolStripMenuItem.Name = "seleccionartodoToolStripMenuItem";
             this.seleccionartodoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.seleccionartodoToolStripMenuItem.Text = "&Lista Simple";
+            this.seleccionartodoToolStripMenuItem.Click += new System.EventHandler(this.seleccionartodoToolStripMenuItem_Click);
             // 
             // listaDobleToolStripMenuItem
             // 
             this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
             this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.listaDobleToolStripMenuItem.Text = "&Lista Doble";
+            this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.listaDobleToolStripMenuItem_Click);
             // 
             // herramientasToolStripMenuItem
             // 
@@ -162,7 +164,7 @@
             // personalizarToolStripMenuItem
             // 
             this.personalizarToolStripMenuItem.Name = "personalizarToolStripMenuItem";
-            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.personalizarToolStripMenuItem.Text = "&Árbol Binario";
             // 
             // ayudaToolStripMenuItem

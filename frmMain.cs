@@ -67,6 +67,18 @@ namespace pryPonceDeLeonMartinaEstrucDatos
             frmPila frm = new frmPila();
             frm.Show();
         }
+
+        private void seleccionartodoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaSimple frm = new frmListaSimple();
+            frm.Show();
+        }
+
+        private void listaDobleToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmListaDoble frm = new frmListaDoble();    
+            frm.Show(); 
+        }
     }
 }
     
