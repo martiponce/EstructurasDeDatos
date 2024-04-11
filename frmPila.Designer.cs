@@ -51,12 +51,12 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.picCola = new System.Windows.Forms.PictureBox();
+            this.picPila = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaPila)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPila)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -281,15 +281,15 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Código:";
             // 
-            // picCola
+            // picPila
             // 
-            this.picCola.Image = ((System.Drawing.Image)(resources.GetObject("picCola.Image")));
-            this.picCola.Location = new System.Drawing.Point(22, 27);
-            this.picCola.Name = "picCola";
-            this.picCola.Size = new System.Drawing.Size(350, 350);
-            this.picCola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picCola.TabIndex = 4;
-            this.picCola.TabStop = false;
+            this.picPila.Image = ((System.Drawing.Image)(resources.GetObject("picPila.Image")));
+            this.picPila.Location = new System.Drawing.Point(22, 27);
+            this.picPila.Name = "picPila";
+            this.picPila.Size = new System.Drawing.Size(350, 350);
+            this.picPila.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picPila.TabIndex = 4;
+            this.picPila.TabStop = false;
             // 
             // frmPila
             // 
@@ -300,7 +300,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.picCola);
+            this.Controls.Add(this.picPila);
             this.Cursor = System.Windows.Forms.Cursors.Hand;
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -315,7 +315,7 @@
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picPila)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -344,6 +344,6 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox picCola;
+        private System.Windows.Forms.PictureBox picPila;
     }
 }

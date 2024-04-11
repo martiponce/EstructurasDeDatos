@@ -46,12 +46,12 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.picCola = new System.Windows.Forms.PictureBox();
+            this.picListaSimple = new System.Windows.Forms.PictureBox();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaSimple)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCola)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picListaSimple)).BeginInit();
             this.SuspendLayout();
             // 
             // groupBox3
@@ -223,15 +223,15 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Código:";
             // 
-            // picCola
+            // picListaSimple
             // 
-            this.picCola.Image = ((System.Drawing.Image)(resources.GetObject("picCola.Image")));
-            this.picCola.Location = new System.Drawing.Point(33, 22);
-            this.picCola.Name = "picCola";
-            this.picCola.Size = new System.Drawing.Size(350, 350);
-            this.picCola.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picCola.TabIndex = 8;
-            this.picCola.TabStop = false;
+            this.picListaSimple.Image = ((System.Drawing.Image)(resources.GetObject("picListaSimple.Image")));
+            this.picListaSimple.Location = new System.Drawing.Point(33, 22);
+            this.picListaSimple.Name = "picListaSimple";
+            this.picListaSimple.Size = new System.Drawing.Size(350, 350);
+            this.picListaSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.picListaSimple.TabIndex = 8;
+            this.picListaSimple.TabStop = false;
             // 
             // frmListaSimple
             // 
@@ -242,7 +242,7 @@
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.picCola);
+            this.Controls.Add(this.picListaSimple);
             this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
@@ -255,7 +255,7 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picCola)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.picListaSimple)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -279,6 +279,6 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox picCola;
+        private System.Windows.Forms.PictureBox picListaSimple;
     }
 }
