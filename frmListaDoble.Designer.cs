@@ -129,7 +129,7 @@
             this.groupBox2.TabIndex = 3;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Elemento Eliminado";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
+ //           this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // btnEliminar
             // 
@@ -140,6 +140,7 @@
             this.btnEliminar.TabIndex = 9;
             this.btnEliminar.Text = "Eliminar";
             this.btnEliminar.UseVisualStyleBackColor = false;
+            this.btnEliminar.Click += new System.EventHandler(this.btnEliminar_Click);
             // 
             // label4
             // 
@@ -217,6 +218,7 @@
             this.btnAgregar.TabIndex = 8;
             this.btnAgregar.Text = "Agregar";
             this.btnAgregar.UseVisualStyleBackColor = false;
+            this.btnAgregar.Click += new System.EventHandler(this.btnAgregar_Click);
             // 
             // label2
             // 
@@ -269,6 +271,7 @@
             this.radAscendente.TabStop = true;
             this.radAscendente.Text = "Ascendente";
             this.radAscendente.UseVisualStyleBackColor = true;
+            this.radAscendente.CheckedChanged += new System.EventHandler(this.radAscendente_CheckedChanged);
             // 
             // radDescendente
             // 
@@ -280,6 +283,7 @@
             this.radDescendente.TabStop = true;
             this.radDescendente.Text = "Descendente";
             this.radDescendente.UseVisualStyleBackColor = true;
+            this.radDescendente.CheckedChanged += new System.EventHandler(this.radDescendente_CheckedChanged);
             // 
             // frmListaDoble
             // 
@@ -298,6 +302,7 @@
             this.Name = "frmListaDoble";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Estructura Dinámica  Lineal: Lista Doble";
+            this.Load += new System.EventHandler(this.frmListaDoble_Load);
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaDoble)).EndInit();
             this.groupBox2.ResumeLayout(false);
