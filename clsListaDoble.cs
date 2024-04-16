@@ -104,7 +104,6 @@ namespace pryPonceDeLeonMartinaEstrucDatos
                 aux = aux.Siguiente;
             }
         }
-
         public void Recorrer(ListBox Lista)
         {
 
@@ -116,7 +115,6 @@ namespace pryPonceDeLeonMartinaEstrucDatos
                 aux = aux.Siguiente;
             }
         }
-
         public void Recorrer()
         {
             clsNodo aux = Primero;
@@ -145,7 +143,6 @@ namespace pryPonceDeLeonMartinaEstrucDatos
             }
 
         }
-
         public void RecorrerDesc(ListBox Lista)
         {
             clsNodo aux = Ultimo;

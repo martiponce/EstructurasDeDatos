@@ -25,15 +25,36 @@ namespace pryPonceDeLeonMartinaEstrucDatos
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-            clsNodo objNodo = new clsNodo();
-            objNodo.Codigo = Convert.ToInt32(txtCodigo.Text);
-            objNodo.Nombre = txtNombre.Text;
-            objNodo.Tramite = txtTramite.Text;
+            // Verifica que el texto en txtCodigo.Text sea un número válido
+            if (int.TryParse(txtCodigo.Text, out int codigo))
+            {
+                clsNodo objNodo = new clsNodo();
+                objNodo.Codigo = codigo;
+                objNodo.Nombre = txtNombre.Text;
+                objNodo.Tramite = txtTramite.Text;
 
-            // Cambia la siguiente línea para trabajar con clsListaSimple en lugar de clsCola
-            Lista.Agregar(objNodo);
+                // Agrega el nodo a la lista
+                Lista.Agregar(objNodo);
 
-          
+                // Actualiza la interfaz gráfica después de agregar un nodo
+                if (radAscendente.Checked)
+                {
+                    Lista.Recorrer(grillaListaDoble);
+                    Lista.Recorrer(lstListaDoble);
+                    Lista.Recorrer();
+                }
+                else if (radDescendente.Checked)
+                {
+                    Lista.RecorrerDesc(grillaListaDoble);
+                    Lista.RecorrerDesc(lstListaDoble);
+                    Lista.RecorrerDesc();
+                }
+            }
+            else
+            {
+                MessageBox.Show("El código ingresado no es válido. Por favor, ingrese un número entero.");
+            }
+
             // Limpia los campos de texto después de agregar el nodo
             txtCodigo.Text = "";
             txtNombre.Text = "";
@@ -41,43 +62,32 @@ namespace pryPonceDeLeonMartinaEstrucDatos
 
         }
 
-        private void radDescendente_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radDescendente.Checked)
-            {
-                Lista.RecorrerDesc(grillaListaDoble);
-                Lista.RecorrerDesc(lstListaDoble);
-                Lista.RecorrerDesc();
-            }
-        }
-
-        private void radAscendente_CheckedChanged(object sender, EventArgs e)
-        {
-            if (radAscendente.Checked)
-            {
-                Lista.Recorrer(grillaListaDoble);
-                Lista.Recorrer(lstListaDoble);
-                Lista.Recorrer();
-            }
-        }
-
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (Lista.Primero != null)
+            if (!string.IsNullOrEmpty(lblCodigo.Text))
             {
-               
-              
-                Lista.Recorrer(grillaListaDoble);
-                Lista.Recorrer(lstListaDoble);
-                Lista.RecorrerDesc();
+                Int32 codigo = Convert.ToInt32(lblCodigo.Text);
+                Lista.Eliminar(codigo);
+
+                // Actualiza la interfaz gráfica después de eliminar un nodo
+                if (radAscendente.Checked)
+                {
+                    Lista.Recorrer(grillaListaDoble);
+                    Lista.Recorrer(lstListaDoble);
+                    Lista.Recorrer();
+                }
+                else if (radDescendente.Checked)
+                {
+                    Lista.RecorrerDesc(grillaListaDoble);
+                    Lista.RecorrerDesc(lstListaDoble);
+                    Lista.Recorrer();
+                }
             }
             else
             {
-                MessageBox.Show("La lista está vacía");
+                MessageBox.Show("No hay código para eliminar");
             }
             btnEliminar.Enabled = false;
         }
-
-        
     }
 }

@@ -271,7 +271,7 @@
             this.radAscendente.TabStop = true;
             this.radAscendente.Text = "Ascendente";
             this.radAscendente.UseVisualStyleBackColor = true;
-            this.radAscendente.CheckedChanged += new System.EventHandler(this.radAscendente_CheckedChanged);
+//            this.radAscendente.CheckedChanged += new System.EventHandler(this.radAscendente_CheckedChanged);
             // 
             // radDescendente
             // 
@@ -283,7 +283,7 @@
             this.radDescendente.TabStop = true;
             this.radDescendente.Text = "Descendente";
             this.radDescendente.UseVisualStyleBackColor = true;
-            this.radDescendente.CheckedChanged += new System.EventHandler(this.radDescendente_CheckedChanged);
+ //           this.radDescendente.CheckedChanged += new System.EventHandler(this.radDescendente_CheckedChanged);
             // 
             // frmListaDoble
             // 
