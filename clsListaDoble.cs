@@ -42,17 +42,18 @@ namespace pryPonceDeLeonMartinaEstrucDatos
                 }
                 else
                 {
-                    clsNodo Aux = Primero;
-                    clsNodo Ant = Primero;
-                    while (Aux.Codigo < Nuevo.Codigo)
+                    if (Nuevo.Codigo > Ultimo.Codigo)
                     {
-                        Ant = Aux;
-                        Aux = Aux.Siguiente;
+                        Ultimo.Siguiente = Nuevo;
+                        Nuevo.Anterior = Ultimo;
+                        Ultimo = Nuevo;
+
                     }
-                    Ant.Siguiente = Nuevo;
-                    Nuevo.Siguiente = Aux;
-                    Aux.Anterior = Nuevo;
-                    Nuevo.Anterior = Ant;
+                    else
+                    {
+                        
+                    }
+                    
 
                 }
                
