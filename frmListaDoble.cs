@@ -20,7 +20,7 @@ namespace pryPonceDeLeonMartinaEstrucDatos
 
         private void frmListaDoble_Load(object sender, EventArgs e)
         {
-
+            radAscendente.Checked = true;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
