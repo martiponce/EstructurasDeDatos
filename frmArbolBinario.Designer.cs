@@ -1,6 +1,6 @@
 ﻿namespace pryPonceDeLeonMartinaEstrucDatos
 {
-    partial class frmListaDoble
+    partial class frmArbolBinario
     {
         /// <summary>
         /// Required designer variable.
@@ -28,15 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmListaDoble));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArbolBinario));
+            this.radInOrden = new System.Windows.Forms.RadioButton();
+            this.radPreOrden = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.grillaListaDoble = new System.Windows.Forms.DataGridView();
+            this.grillaArbolBinario = new System.Windows.Forms.DataGridView();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.lstListaDoble = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.cboCodigo = new System.Windows.Forms.ComboBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -47,46 +47,68 @@
             this.btnAgregar = new System.Windows.Forms.Button();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.picListaDoble = new System.Windows.Forms.PictureBox();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.radAscendente = new System.Windows.Forms.RadioButton();
-            this.radDescendente = new System.Windows.Forms.RadioButton();
+            this.treeView = new System.Windows.Forms.TreeView();
+            this.rdPostOrden = new System.Windows.Forms.RadioButton();
+            this.cboCodigo = new System.Windows.Forms.ComboBox();
+            this.btnEquilibrar = new System.Windows.Forms.Button();
             this.groupBox3.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.grillaListaDoble)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaArbolBinario)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picListaDoble)).BeginInit();
-            this.groupBox4.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // radInOrden
+            // 
+            this.radInOrden.AutoSize = true;
+            this.radInOrden.Location = new System.Drawing.Point(81, 65);
+            this.radInOrden.Name = "radInOrden";
+            this.radInOrden.Size = new System.Drawing.Size(81, 19);
+            this.radInOrden.TabIndex = 7;
+            this.radInOrden.TabStop = true;
+            this.radInOrden.Text = "In-Orden";
+            this.radInOrden.UseVisualStyleBackColor = true;
+            // 
+            // radPreOrden
+            // 
+            this.radPreOrden.AutoSize = true;
+            this.radPreOrden.Location = new System.Drawing.Point(81, 117);
+            this.radPreOrden.Name = "radPreOrden";
+            this.radPreOrden.Size = new System.Drawing.Size(92, 19);
+            this.radPreOrden.TabIndex = 8;
+            this.radPreOrden.TabStop = true;
+            this.radPreOrden.Text = "Pre-Orden";
+            this.radPreOrden.UseVisualStyleBackColor = true;
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.grillaListaDoble);
-            this.groupBox3.Controls.Add(this.lstListaDoble);
+            this.groupBox3.Controls.Add(this.radInOrden);
+            this.groupBox3.Controls.Add(this.rdPostOrden);
+            this.groupBox3.Controls.Add(this.radPreOrden);
+            this.groupBox3.Controls.Add(this.grillaArbolBinario);
             this.groupBox3.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(33, 411);
+            this.groupBox3.Location = new System.Drawing.Point(27, 412);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Size = new System.Drawing.Size(868, 268);
-            this.groupBox3.TabIndex = 2;
+            this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
-            this.groupBox3.Text = "Listado en una Lista y una Grilla";
+            this.groupBox3.Text = "Listado del Árbol";
             // 
-            // grillaListaDoble
+            // grillaArbolBinario
             // 
-            this.grillaListaDoble.AllowUserToAddRows = false;
-            this.grillaListaDoble.AllowUserToDeleteRows = false;
-            this.grillaListaDoble.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.grillaListaDoble.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.grillaListaDoble.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.grillaArbolBinario.AllowUserToAddRows = false;
+            this.grillaArbolBinario.AllowUserToDeleteRows = false;
+            this.grillaArbolBinario.BackgroundColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.grillaArbolBinario.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.grillaArbolBinario.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.clmCodigo,
             this.clmNombre,
             this.clmTramite});
-            this.grillaListaDoble.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.grillaListaDoble.Location = new System.Drawing.Point(390, 31);
-            this.grillaListaDoble.Name = "grillaListaDoble";
-            this.grillaListaDoble.ReadOnly = true;
-            this.grillaListaDoble.Size = new System.Drawing.Size(460, 220);
-            this.grillaListaDoble.TabIndex = 1;
+            this.grillaArbolBinario.GridColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.grillaArbolBinario.Location = new System.Drawing.Point(390, 31);
+            this.grillaArbolBinario.Name = "grillaArbolBinario";
+            this.grillaArbolBinario.ReadOnly = true;
+            this.grillaArbolBinario.Size = new System.Drawing.Size(460, 220);
+            this.grillaArbolBinario.TabIndex = 1;
             // 
             // clmCodigo
             // 
@@ -107,43 +129,23 @@
             this.clmTramite.Name = "clmTramite";
             this.clmTramite.ReadOnly = true;
             // 
-            // lstListaDoble
-            // 
-            this.lstListaDoble.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.lstListaDoble.FormattingEnabled = true;
-            this.lstListaDoble.ItemHeight = 15;
-            this.lstListaDoble.Location = new System.Drawing.Point(17, 31);
-            this.lstListaDoble.Name = "lstListaDoble";
-            this.lstListaDoble.Size = new System.Drawing.Size(333, 214);
-            this.lstListaDoble.TabIndex = 0;
-            // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.cboCodigo);
             this.groupBox2.Controls.Add(this.btnEliminar);
             this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(681, 22);
+            this.groupBox2.Location = new System.Drawing.Point(675, 23);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(220, 168);
-            this.groupBox2.TabIndex = 3;
+            this.groupBox2.Size = new System.Drawing.Size(220, 202);
+            this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Elemento Eliminado";
-            // 
-            // cboCodigo
-            // 
-            this.cboCodigo.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.cboCodigo.FormattingEnabled = true;
-            this.cboCodigo.Location = new System.Drawing.Point(92, 46);
-            this.cboCodigo.Name = "cboCodigo";
-            this.cboCodigo.Size = new System.Drawing.Size(115, 23);
-            this.cboCodigo.TabIndex = 10;
-            this.cboCodigo.SelectedIndexChanged += new System.EventHandler(this.cboCodigo_SelectedIndexChanged);
             // 
             // btnEliminar
             // 
             this.btnEliminar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
-            this.btnEliminar.Location = new System.Drawing.Point(59, 104);
+            this.btnEliminar.Location = new System.Drawing.Point(55, 125);
             this.btnEliminar.Name = "btnEliminar";
             this.btnEliminar.Size = new System.Drawing.Size(114, 39);
             this.btnEliminar.TabIndex = 9;
@@ -171,10 +173,10 @@
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Controls.Add(this.label1);
             this.groupBox1.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox1.Location = new System.Drawing.Point(425, 22);
+            this.groupBox1.Location = new System.Drawing.Point(419, 23);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(220, 350);
-            this.groupBox1.TabIndex = 5;
+            this.groupBox1.TabIndex = 10;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Nuevo Elemento";
             // 
@@ -240,88 +242,78 @@
             this.label1.TabIndex = 2;
             this.label1.Text = "Código:";
             // 
-            // picListaDoble
+            // treeView
             // 
-            this.picListaDoble.Image = ((System.Drawing.Image)(resources.GetObject("picListaDoble.Image")));
-            this.picListaDoble.Location = new System.Drawing.Point(33, 22);
-            this.picListaDoble.Name = "picListaDoble";
-            this.picListaDoble.Size = new System.Drawing.Size(350, 350);
-            this.picListaDoble.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.picListaDoble.TabIndex = 4;
-            this.picListaDoble.TabStop = false;
+            this.treeView.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.treeView.Location = new System.Drawing.Point(27, 23);
+            this.treeView.Name = "treeView";
+            this.treeView.Size = new System.Drawing.Size(350, 350);
+            this.treeView.TabIndex = 12;
             // 
-            // groupBox4
+            // rdPostOrden
             // 
-            this.groupBox4.Controls.Add(this.radAscendente);
-            this.groupBox4.Controls.Add(this.radDescendente);
-            this.groupBox4.Location = new System.Drawing.Point(681, 201);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Size = new System.Drawing.Size(220, 168);
-            this.groupBox4.TabIndex = 6;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Listar Datos";
+            this.rdPostOrden.AutoSize = true;
+            this.rdPostOrden.Location = new System.Drawing.Point(81, 180);
+            this.rdPostOrden.Name = "rdPostOrden";
+            this.rdPostOrden.Size = new System.Drawing.Size(98, 19);
+            this.rdPostOrden.TabIndex = 8;
+            this.rdPostOrden.TabStop = true;
+            this.rdPostOrden.Text = "Post-Orden";
+            this.rdPostOrden.UseVisualStyleBackColor = true;
             // 
-            // radAscendente
+            // cboCodigo
             // 
-            this.radAscendente.AutoSize = true;
-            this.radAscendente.Location = new System.Drawing.Point(59, 56);
-            this.radAscendente.Name = "radAscendente";
-            this.radAscendente.Size = new System.Drawing.Size(102, 19);
-            this.radAscendente.TabIndex = 7;
-            this.radAscendente.TabStop = true;
-            this.radAscendente.Text = "Ascendente";
-            this.radAscendente.UseVisualStyleBackColor = true;
+            this.cboCodigo.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.cboCodigo.FormattingEnabled = true;
+            this.cboCodigo.Location = new System.Drawing.Point(92, 51);
+            this.cboCodigo.Name = "cboCodigo";
+            this.cboCodigo.Size = new System.Drawing.Size(115, 23);
+            this.cboCodigo.TabIndex = 11;
             // 
-            // radDescendente
+            // btnEquilibrar
             // 
-            this.radDescendente.AutoSize = true;
-            this.radDescendente.Location = new System.Drawing.Point(59, 108);
-            this.radDescendente.Name = "radDescendente";
-            this.radDescendente.Size = new System.Drawing.Size(111, 19);
-            this.radDescendente.TabIndex = 8;
-            this.radDescendente.TabStop = true;
-            this.radDescendente.Text = "Descendente";
-            this.radDescendente.UseVisualStyleBackColor = true;
+            this.btnEquilibrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
+            this.btnEquilibrar.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnEquilibrar.Location = new System.Drawing.Point(711, 281);
+            this.btnEquilibrar.Name = "btnEquilibrar";
+            this.btnEquilibrar.Size = new System.Drawing.Size(155, 39);
+            this.btnEquilibrar.TabIndex = 8;
+            this.btnEquilibrar.Text = "Equilibrar";
+            this.btnEquilibrar.UseVisualStyleBackColor = false;
             // 
-            // frmListaDoble
+            // frmArbolBinario
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(934, 701);
-            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.treeView);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
-            this.Controls.Add(this.picListaDoble);
-            this.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Controls.Add(this.btnEquilibrar);
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
-            this.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
-            this.Name = "frmListaDoble";
-            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Estructura Dinámica  Lineal: Lista Doble";
-            this.Load += new System.EventHandler(this.frmListaDoble_Load);
+            this.Name = "frmArbolBinario";
+            this.Text = "Árbol Binario";
             this.groupBox3.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.grillaListaDoble)).EndInit();
+            this.groupBox3.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.grillaArbolBinario)).EndInit();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.picListaDoble)).EndInit();
-            this.groupBox4.ResumeLayout(false);
-            this.groupBox4.PerformLayout();
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
+        private System.Windows.Forms.RadioButton radInOrden;
+        private System.Windows.Forms.RadioButton radPreOrden;
         private System.Windows.Forms.GroupBox groupBox3;
-        private System.Windows.Forms.DataGridView grillaListaDoble;
+        private System.Windows.Forms.DataGridView grillaArbolBinario;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmCodigo;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmNombre;
         private System.Windows.Forms.DataGridViewTextBoxColumn clmTramite;
-        private System.Windows.Forms.ListBox lstListaDoble;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.Button btnEliminar;
         private System.Windows.Forms.Label label4;
@@ -333,10 +325,9 @@
         private System.Windows.Forms.Button btnAgregar;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.PictureBox picListaDoble;
-        private System.Windows.Forms.GroupBox groupBox4;
-        private System.Windows.Forms.RadioButton radAscendente;
-        private System.Windows.Forms.RadioButton radDescendente;
+        private System.Windows.Forms.TreeView treeView;
+        private System.Windows.Forms.RadioButton rdPostOrden;
         private System.Windows.Forms.ComboBox cboCodigo;
+        private System.Windows.Forms.Button btnEquilibrar;
     }
 }

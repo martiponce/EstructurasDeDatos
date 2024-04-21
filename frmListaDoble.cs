@@ -64,9 +64,9 @@ namespace pryPonceDeLeonMartinaEstrucDatos
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(lblCodigo.Text))
+            if (!string.IsNullOrEmpty(cboCodigo.Text))
             {
-                Int32 codigo = Convert.ToInt32(lblCodigo.Text);
+                Int32 codigo = Convert.ToInt32(cboCodigo.Text);
                 Lista.Eliminar(codigo);
 
                 // Actualiza la interfaz gráfica después de eliminar un nodo
@@ -88,6 +88,19 @@ namespace pryPonceDeLeonMartinaEstrucDatos
                 MessageBox.Show("No hay código para eliminar");
             }
             btnEliminar.Enabled = false;
+        }
+
+        private void cboCodigo_SelectedIndexChanged(object sender, EventArgs e)
+        {
+            if (cboCodigo.Text == "")
+            {
+                btnEliminar.Enabled = false;
+
+            }
+            else
+            {
+                btnEliminar.Enabled = true;
+            }
         }
     }
 }

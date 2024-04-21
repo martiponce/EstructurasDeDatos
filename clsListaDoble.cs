@@ -58,8 +58,7 @@ namespace pryPonceDeLeonMartinaEstrucDatos
                 }
                
             }
-        }
-        
+        }    
         public void Eliminar (Int32 Codigo )
         {
             if (Primero.Codigo == Codigo && Ultimo == Primero)
@@ -94,7 +93,6 @@ namespace pryPonceDeLeonMartinaEstrucDatos
 
             }
         }
-
         public void Recorrer(DataGridView Grilla)
         {
             clsNodo aux = Primero;
