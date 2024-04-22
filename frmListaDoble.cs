@@ -4,6 +4,7 @@ using System.ComponentModel;
 using System.Data;
 using System.Drawing;
 using System.Linq;
+using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
@@ -41,13 +42,21 @@ namespace pryPonceDeLeonMartinaEstrucDatos
                 {
                     Lista.Recorrer(grillaListaDoble);
                     Lista.Recorrer(lstListaDoble);
+                    Lista.Recorrer(cboCodigo);
                     Lista.Recorrer();
+                    txtCodigo.Text = "";
+                    txtNombre.Text = "";
+                    txtTramite.Text = "";
                 }
                 else if (radDescendente.Checked)
                 {
                     Lista.RecorrerDesc(grillaListaDoble);
                     Lista.RecorrerDesc(lstListaDoble);
+                    Lista.RecorrerDesc(cboCodigo);
                     Lista.RecorrerDesc();
+                    txtCodigo.Text = "";
+                    txtNombre.Text = "";
+                    txtTramite.Text = "";
                 }
             }
             else
@@ -64,30 +73,42 @@ namespace pryPonceDeLeonMartinaEstrucDatos
 
         private void btnEliminar_Click(object sender, EventArgs e)
         {
-            if (!string.IsNullOrEmpty(cboCodigo.Text))
+            if (radAscendente.Checked == true)
             {
-                Int32 codigo = Convert.ToInt32(cboCodigo.Text);
-                Lista.Eliminar(codigo);
-
-                // Actualiza la interfaz gráfica después de eliminar un nodo
-                if (radAscendente.Checked)
+                if (Lista.Primero != null)
                 {
-                    Lista.Recorrer(grillaListaDoble);
+                    Int32 x = Convert.ToInt32(cboCodigo.Text);
+                    Lista.Eliminar(x);
                     Lista.Recorrer(lstListaDoble);
+                    Lista.Recorrer(grillaListaDoble);
+                    Lista.Recorrer(cboCodigo);
                     Lista.Recorrer();
                 }
-                else if (radDescendente.Checked)
+                else
                 {
-                    Lista.RecorrerDesc(grillaListaDoble);
-                    Lista.RecorrerDesc(lstListaDoble);
-                    Lista.Recorrer();
+                    MessageBox.Show("La lista está vacía");
                 }
+                btnEliminar.Enabled = false;
             }
-            else
+            if (radDescendente.Checked == true)
             {
-                MessageBox.Show("No hay código para eliminar");
+                if (Lista.Primero != null)
+                {
+                    Int32 x = Convert.ToInt32(cboCodigo.Text);
+                    Lista.Eliminar(x);
+                    Lista.RecorrerDesc(lstListaDoble);
+                    Lista.RecorrerDesc(grillaListaDoble);
+                    Lista.RecorrerDesc(cboCodigo);
+                    Lista.RecorrerDesc();
+                }
+                else
+                {
+                    MessageBox.Show("La lista está vacía");
+                }
+                btnEliminar.Enabled = false;
             }
-            btnEliminar.Enabled = false;
+
+
         }
 
         private void cboCodigo_SelectedIndexChanged(object sender, EventArgs e)
@@ -102,5 +123,5 @@ namespace pryPonceDeLeonMartinaEstrucDatos
                 btnEliminar.Enabled = true;
             }
         }
-    }
+    } 
 }

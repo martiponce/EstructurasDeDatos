@@ -104,7 +104,7 @@ namespace pryPonceDeLeonMartinaEstrucDatos
             clsNodo aux = Primero;
             StreamWriter AD = new StreamWriter("clsCola.csv", false, Encoding.UTF8);
             AD.WriteLine("Lista de espera \n");
-            AD.WriteLine("Codigo; Nombre;Tramite");
+            AD.WriteLine("Codigo; Nombre; Tramite");
             while (aux!=null)
             {
                 AD.Write(aux.Codigo);

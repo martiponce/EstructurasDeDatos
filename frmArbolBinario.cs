@@ -22,23 +22,22 @@ namespace pryPonceDeLeonMartinaEstrucDatos
         private void btnEliminar_Click(object sender, EventArgs e)
         {
 
-            //if (arbol.Raiz != null)
-            //{
-            //    Int32 x = Convert.ToInt32(cboCodigo.Text);
-            //    arbol.Eliminar(x);
-            //    arbol.Recorrer(grillaArbolBinario);
+            if (arbol.Raiz != null)
+            {
+                Int32 x = Convert.ToInt32(cboCodigo.Text);
+               // arbol.Eliminar(x);
+                arbol.Recorrer(grillaArbolBinario);
 
 
-            //    // Actualiza el ComboBox después de eliminar un nodo
-            //    arbol.Recorrer(cboCodigo);
-
-            //    arbol.Recorrer();
-            //}
-            //else
-            //{
-            //    MessageBox.Show("La lista está vacía");
-            //}
-            //btnEliminar.Enabled = false;
+                // Actualiza el ComboBox después de eliminar un nodo
+                arbol.Recorrer(cboCodigo);
+                
+            }
+            else
+            {
+                MessageBox.Show("La lista está vacía");
+            }
+            btnEliminar.Enabled = false;
         }
 
         private void btnAgregar_Click(object sender, EventArgs e)
