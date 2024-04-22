@@ -43,7 +43,17 @@ namespace pryPonceDeLeonMartinaEstrucDatos
 
         private void btnAgregar_Click(object sender, EventArgs e)
         {
-
+            clsNodo obj = new clsNodo();
+            obj.Codigo = Convert.ToInt32(txtCodigo.Text);
+            obj.Nombre = txtNombre.Text;
+            obj.Tramite = txtTramite.Text;
+            arbol.Agregar(obj);
+            arbol.Recorrer(grillaArbolBinario);
+            arbol.Recorrer(treeView);
+            arbol.Recorrer(cboCodigo);
+            txtTramite.Text = "";
+            txtNombre.Text = "";
+            txtCodigo.Text = "";
         }
     }
 }
