@@ -29,14 +29,16 @@
         private void InitializeComponent()
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmArbolBinario));
-            this.radInOrden = new System.Windows.Forms.RadioButton();
+            this.radInOrdenAsc = new System.Windows.Forms.RadioButton();
             this.radPreOrden = new System.Windows.Forms.RadioButton();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.rdPostOrden = new System.Windows.Forms.RadioButton();
             this.grillaArbolBinario = new System.Windows.Forms.DataGridView();
             this.clmCodigo = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmNombre = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.clmTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.cboCodigo = new System.Windows.Forms.ComboBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.label4 = new System.Windows.Forms.Label();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -48,30 +50,29 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.treeView = new System.Windows.Forms.TreeView();
-            this.rdPostOrden = new System.Windows.Forms.RadioButton();
-            this.cboCodigo = new System.Windows.Forms.ComboBox();
             this.btnEquilibrar = new System.Windows.Forms.Button();
+            this.rdInOrdenDesc = new System.Windows.Forms.RadioButton();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaArbolBinario)).BeginInit();
             this.groupBox2.SuspendLayout();
             this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
-            // radInOrden
+            // radInOrdenAsc
             // 
-            this.radInOrden.AutoSize = true;
-            this.radInOrden.Location = new System.Drawing.Point(81, 65);
-            this.radInOrden.Name = "radInOrden";
-            this.radInOrden.Size = new System.Drawing.Size(81, 19);
-            this.radInOrden.TabIndex = 7;
-            this.radInOrden.TabStop = true;
-            this.radInOrden.Text = "In-Orden";
-            this.radInOrden.UseVisualStyleBackColor = true;
+            this.radInOrdenAsc.AutoSize = true;
+            this.radInOrdenAsc.Location = new System.Drawing.Point(81, 65);
+            this.radInOrdenAsc.Name = "radInOrdenAsc";
+            this.radInOrdenAsc.Size = new System.Drawing.Size(162, 19);
+            this.radInOrdenAsc.TabIndex = 7;
+            this.radInOrdenAsc.TabStop = true;
+            this.radInOrdenAsc.Text = "In-Orden-Ascendente";
+            this.radInOrdenAsc.UseVisualStyleBackColor = true;
             // 
             // radPreOrden
             // 
             this.radPreOrden.AutoSize = true;
-            this.radPreOrden.Location = new System.Drawing.Point(81, 117);
+            this.radPreOrden.Location = new System.Drawing.Point(81, 152);
             this.radPreOrden.Name = "radPreOrden";
             this.radPreOrden.Size = new System.Drawing.Size(92, 19);
             this.radPreOrden.TabIndex = 8;
@@ -81,7 +82,8 @@
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.radInOrden);
+            this.groupBox3.Controls.Add(this.radInOrdenAsc);
+            this.groupBox3.Controls.Add(this.rdInOrdenDesc);
             this.groupBox3.Controls.Add(this.rdPostOrden);
             this.groupBox3.Controls.Add(this.radPreOrden);
             this.groupBox3.Controls.Add(this.grillaArbolBinario);
@@ -92,6 +94,17 @@
             this.groupBox3.TabIndex = 7;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Listado del Árbol";
+            // 
+            // rdPostOrden
+            // 
+            this.rdPostOrden.AutoSize = true;
+            this.rdPostOrden.Location = new System.Drawing.Point(81, 198);
+            this.rdPostOrden.Name = "rdPostOrden";
+            this.rdPostOrden.Size = new System.Drawing.Size(98, 19);
+            this.rdPostOrden.TabIndex = 8;
+            this.rdPostOrden.TabStop = true;
+            this.rdPostOrden.Text = "Post-Orden";
+            this.rdPostOrden.UseVisualStyleBackColor = true;
             // 
             // grillaArbolBinario
             // 
@@ -141,6 +154,15 @@
             this.groupBox2.TabIndex = 8;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Elemento Eliminado";
+            // 
+            // cboCodigo
+            // 
+            this.cboCodigo.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.cboCodigo.FormattingEnabled = true;
+            this.cboCodigo.Location = new System.Drawing.Point(92, 51);
+            this.cboCodigo.Name = "cboCodigo";
+            this.cboCodigo.Size = new System.Drawing.Size(115, 23);
+            this.cboCodigo.TabIndex = 11;
             // 
             // btnEliminar
             // 
@@ -250,26 +272,6 @@
             this.treeView.Size = new System.Drawing.Size(350, 350);
             this.treeView.TabIndex = 12;
             // 
-            // rdPostOrden
-            // 
-            this.rdPostOrden.AutoSize = true;
-            this.rdPostOrden.Location = new System.Drawing.Point(81, 180);
-            this.rdPostOrden.Name = "rdPostOrden";
-            this.rdPostOrden.Size = new System.Drawing.Size(98, 19);
-            this.rdPostOrden.TabIndex = 8;
-            this.rdPostOrden.TabStop = true;
-            this.rdPostOrden.Text = "Post-Orden";
-            this.rdPostOrden.UseVisualStyleBackColor = true;
-            // 
-            // cboCodigo
-            // 
-            this.cboCodigo.BackColor = System.Drawing.SystemColors.InactiveCaption;
-            this.cboCodigo.FormattingEnabled = true;
-            this.cboCodigo.Location = new System.Drawing.Point(92, 51);
-            this.cboCodigo.Name = "cboCodigo";
-            this.cboCodigo.Size = new System.Drawing.Size(115, 23);
-            this.cboCodigo.TabIndex = 11;
-            // 
             // btnEquilibrar
             // 
             this.btnEquilibrar.BackColor = System.Drawing.SystemColors.GradientActiveCaption;
@@ -280,6 +282,17 @@
             this.btnEquilibrar.TabIndex = 8;
             this.btnEquilibrar.Text = "Equilibrar";
             this.btnEquilibrar.UseVisualStyleBackColor = false;
+            // 
+            // rdInOrdenDesc
+            // 
+            this.rdInOrdenDesc.AutoSize = true;
+            this.rdInOrdenDesc.Location = new System.Drawing.Point(81, 108);
+            this.rdInOrdenDesc.Name = "rdInOrdenDesc";
+            this.rdInOrdenDesc.Size = new System.Drawing.Size(171, 19);
+            this.rdInOrdenDesc.TabIndex = 8;
+            this.rdInOrdenDesc.TabStop = true;
+            this.rdInOrdenDesc.Text = "In-Orden-Descendente";
+            this.rdInOrdenDesc.UseVisualStyleBackColor = true;
             // 
             // frmArbolBinario
             // 
@@ -307,7 +320,7 @@
         }
 
         #endregion
-        private System.Windows.Forms.RadioButton radInOrden;
+        private System.Windows.Forms.RadioButton radInOrdenAsc;
         private System.Windows.Forms.RadioButton radPreOrden;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.DataGridView grillaArbolBinario;
@@ -329,5 +342,6 @@
         private System.Windows.Forms.RadioButton rdPostOrden;
         private System.Windows.Forms.ComboBox cboCodigo;
         private System.Windows.Forms.Button btnEquilibrar;
+        private System.Windows.Forms.RadioButton rdInOrdenDesc;
     }
 }

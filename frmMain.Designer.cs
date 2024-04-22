@@ -123,33 +123,33 @@
             // deshacerToolStripMenuItem
             // 
             this.deshacerToolStripMenuItem.Name = "deshacerToolStripMenuItem";
-            this.deshacerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.deshacerToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.deshacerToolStripMenuItem.Text = "&Cola";
             this.deshacerToolStripMenuItem.Click += new System.EventHandler(this.deshacerToolStripMenuItem_Click);
             // 
             // rehacerToolStripMenuItem
             // 
             this.rehacerToolStripMenuItem.Name = "rehacerToolStripMenuItem";
-            this.rehacerToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.rehacerToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.rehacerToolStripMenuItem.Text = "&Pila";
             this.rehacerToolStripMenuItem.Click += new System.EventHandler(this.rehacerToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
             this.toolStripSeparator3.Name = "toolStripSeparator3";
-            this.toolStripSeparator3.Size = new System.Drawing.Size(177, 6);
+            this.toolStripSeparator3.Size = new System.Drawing.Size(142, 6);
             // 
             // seleccionartodoToolStripMenuItem
             // 
             this.seleccionartodoToolStripMenuItem.Name = "seleccionartodoToolStripMenuItem";
-            this.seleccionartodoToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.seleccionartodoToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.seleccionartodoToolStripMenuItem.Text = "&Lista Simple";
             this.seleccionartodoToolStripMenuItem.Click += new System.EventHandler(this.seleccionartodoToolStripMenuItem_Click);
             // 
             // listaDobleToolStripMenuItem
             // 
             this.listaDobleToolStripMenuItem.Name = "listaDobleToolStripMenuItem";
-            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.listaDobleToolStripMenuItem.Size = new System.Drawing.Size(145, 22);
             this.listaDobleToolStripMenuItem.Text = "&Lista Doble";
             this.listaDobleToolStripMenuItem.Click += new System.EventHandler(this.listaDobleToolStripMenuItem_Click);
             // 
@@ -164,8 +164,9 @@
             // personalizarToolStripMenuItem
             // 
             this.personalizarToolStripMenuItem.Name = "personalizarToolStripMenuItem";
-            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
+            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.personalizarToolStripMenuItem.Text = "&Árbol Binario";
+            this.personalizarToolStripMenuItem.Click += new System.EventHandler(this.personalizarToolStripMenuItem_Click);
             // 
             // ayudaToolStripMenuItem
             // 

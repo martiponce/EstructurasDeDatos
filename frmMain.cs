@@ -79,6 +79,12 @@ namespace pryPonceDeLeonMartinaEstrucDatos
             frmListaDoble frm = new frmListaDoble();    
             frm.Show(); 
         }
+
+        private void personalizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            frmArbolBinario frm = new frmArbolBinario();
+            frm.Show();
+        }
     }
 }
     

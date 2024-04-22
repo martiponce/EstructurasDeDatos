@@ -47,6 +47,7 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.picListaSimple = new System.Windows.Forms.PictureBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaSimple)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -114,6 +115,7 @@
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label4);
             this.groupBox2.Controls.Add(this.cboLista);
             this.groupBox2.Controls.Add(this.btnEliminar);
             this.groupBox2.Font = new System.Drawing.Font("Arial Rounded MT Bold", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -233,6 +235,16 @@
             this.picListaSimple.TabIndex = 8;
             this.picListaSimple.TabStop = false;
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(41, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 30);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "♦Seleciona el código \r\nque quieras borrar.";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // frmListaSimple
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 15F);
@@ -253,6 +265,7 @@
             this.groupBox3.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaSimple)).EndInit();
             this.groupBox2.ResumeLayout(false);
+            this.groupBox2.PerformLayout();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.picListaSimple)).EndInit();
@@ -280,5 +293,6 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.PictureBox picListaSimple;
+        private System.Windows.Forms.Label label4;
     }
 }
