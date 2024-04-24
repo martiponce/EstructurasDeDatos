@@ -28,6 +28,7 @@ namespace pryPonceDeLeonMartinaEstrucDatos
             objNodo.Tramite = txtTramite.Text;
 
             Arbol.Agregar(objNodo);
+            
 
             // Actualizar controles después de agregar el nodo
             ActualizarControles();
@@ -58,16 +59,27 @@ namespace pryPonceDeLeonMartinaEstrucDatos
 
         private void radInOrdenAsc_CheckedChanged(object sender, EventArgs e)
         {
+            
             ActualizarControles();
         }
 
         private void radPreOrden_CheckedChanged(object sender, EventArgs e)
         {
+            
             ActualizarControles();
+
         }
 
         private void radPostOrden_CheckedChanged(object sender, EventArgs e)
         {
+            
+            ActualizarControles();
+
+        }
+
+        private void rdInOrdenDesc_CheckedChanged(object sender, EventArgs e)
+        {
+           
             ActualizarControles();
         }
 
@@ -79,16 +91,17 @@ namespace pryPonceDeLeonMartinaEstrucDatos
             //metodos segun lo sleccionado
             if (radInOrdenAsc.Checked)
             {
+                cboCodigo.Items.Clear();
                 Arbol.InOrdenAsc(cboCodigo, Arbol.Raiz);
                 Arbol.CargarTreeView(treeView);
                 Arbol.CargarGrillaInOrden(grillaArbolBinario);
             }
             else if (rdInOrdenDesc.Checked)
             {
-                cboCodigo.Items.Clear(); 
-                Arbol.InOrdenDesc(cboCodigo, Arbol.Raiz); 
+                cboCodigo.Items.Clear();
+                Arbol.InOrdenDesc(cboCodigo, Arbol.Raiz);
                 Arbol.CargarTreeView(treeView);
-                Arbol.CargarGrillaInOrdenDesc(grillaArbolBinario); 
+                Arbol.CargarGrillaInOrdenDesc(grillaArbolBinario);
             }
             else if (radPreOrden.Checked)
             {
@@ -105,5 +118,18 @@ namespace pryPonceDeLeonMartinaEstrucDatos
                 Arbol.CargarGrillaPostOrden(grillaArbolBinario);
             }
         }
+
+        private void frmArbolBinario_Load(object sender, EventArgs e)
+        {
+            radInOrdenAsc.Checked = true;
+
+        }
+
+        private void btnEquilibrar_Click(object sender, EventArgs e)
+        {
+            Arbol.Equilibrar();
+        }
+
+       
     }
 }
