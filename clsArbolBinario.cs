@@ -295,7 +295,9 @@ namespace pryPonceDeLeonMartinaEstrucDatos
         // Cargar grilla en postorden
         public void CargarGrillaPostOrden(DataGridView dgv)
         {
-            dgv.Rows.Clear();
+            dgv.Rows.Clear(); // Limpiamos la grilla antes de cargar
+
+            // Llamamos al método recursivo que recorre en postorden y carga la grilla
             CargarGrillaPostOrdenRec(dgv, Raiz);
         }
 
@@ -303,13 +305,18 @@ namespace pryPonceDeLeonMartinaEstrucDatos
         {
             if (R != null)
             {
-                CargarGrillaPostOrdenRec(dgv, R.Izquierdo); // Recorre el subárbol izquierdo
-                CargarGrillaPostOrdenRec(dgv, R.Derecho);   // Recorre el subárbol derecho
-                dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite); // Agrega el nodo actual a la grilla
+                // Recorremos primero el subárbol izquierdo
+                CargarGrillaPostOrdenRec(dgv, R.Izquierdo);
+
+                // Luego recorremos el subárbol derecho
+                CargarGrillaPostOrdenRec(dgv, R.Derecho);
+
+                // Agregamos el nodo actual a la grilla
+                dgv.Rows.Add(R.Codigo, R.Nombre, R.Tramite);
             }
         }
 
-        //EQUILIBRAR
+        //EQUILIBRAR (modifique lo q paso la profe)
 
         private clsNodo[] Vector = new clsNodo[100];
         private Int32 i = 0;
@@ -339,7 +346,7 @@ namespace pryPonceDeLeonMartinaEstrucDatos
         private void EquilibrarArbol(Int32 ini, Int32 fin)
         {
             Int32 m = (ini + fin) / 2;
-            if (ini<= fin)
+            if (ini <= fin)
             {
                 Agregar(Vector[m]);
                 EquilibrarArbol(ini, m - 1);
@@ -351,17 +358,13 @@ namespace pryPonceDeLeonMartinaEstrucDatos
         {
             if (NodoPadre.Izquierdo != null)
             {
-                GrabarVectorInOrden(NodoPadre.Izquierdo, codigo);
+                GrabarVectorInOrden(NodoPadre.Izquierdo);
             }
-            if (NodoPadre.Codigo != codigo)
-            {
-                Vector[i] = NodoPadre;
-                i += 1;
-
-            }
+            Vector[i] = NodoPadre;
+            i += 1;
             if (NodoPadre.Derecho != null)
             {
-                GrabarVectorInOrden(NodoPadre.Derecho, codigo);
+                GrabarVectorInOrden(NodoPadre.Derecho);
             }
         }
     }

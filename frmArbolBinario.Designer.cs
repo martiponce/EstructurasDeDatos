@@ -170,6 +170,7 @@
             // cboCodigo
             // 
             this.cboCodigo.BackColor = System.Drawing.SystemColors.InactiveCaption;
+            this.cboCodigo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboCodigo.FormattingEnabled = true;
             this.cboCodigo.Location = new System.Drawing.Point(92, 51);
             this.cboCodigo.Name = "cboCodigo";

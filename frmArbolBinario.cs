@@ -117,6 +117,9 @@ namespace pryPonceDeLeonMartinaEstrucDatos
                 Arbol.CargarTreeView(treeView);
                 Arbol.CargarGrillaPostOrden(grillaArbolBinario);
             }
+
+            // Expandir todos los nodos del TreeView
+            treeView.ExpandAll();
         }
 
         private void frmArbolBinario_Load(object sender, EventArgs e)

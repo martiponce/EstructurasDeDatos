@@ -36,6 +36,7 @@
             this.clmTramite = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.lstListaSimple = new System.Windows.Forms.ListBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
             this.cboLista = new System.Windows.Forms.ComboBox();
             this.btnEliminar = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
@@ -47,7 +48,6 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.picListaSimple = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
             this.groupBox3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.grillaListaSimple)).BeginInit();
             this.groupBox2.SuspendLayout();
@@ -126,8 +126,19 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Elemento Eliminado";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(41, 113);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(148, 30);
+            this.label4.TabIndex = 11;
+            this.label4.Text = "♦Seleciona el código \r\nque quieras borrar.";
+            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // cboLista
             // 
+            this.cboLista.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cboLista.FormattingEnabled = true;
             this.cboLista.Location = new System.Drawing.Point(44, 179);
             this.cboLista.Name = "cboLista";
@@ -234,16 +245,6 @@
             this.picListaSimple.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
             this.picListaSimple.TabIndex = 8;
             this.picListaSimple.TabStop = false;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(41, 113);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(148, 30);
-            this.label4.TabIndex = 11;
-            this.label4.Text = "♦Seleciona el código \r\nque quieras borrar.";
-            this.label4.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // frmListaSimple
             // 
