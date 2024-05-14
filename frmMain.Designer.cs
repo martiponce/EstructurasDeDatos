@@ -164,7 +164,7 @@
             // personalizarToolStripMenuItem
             // 
             this.personalizarToolStripMenuItem.Name = "personalizarToolStripMenuItem";
-            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
+            this.personalizarToolStripMenuItem.Size = new System.Drawing.Size(150, 22);
             this.personalizarToolStripMenuItem.Text = "&Árbol Binario";
             this.personalizarToolStripMenuItem.Click += new System.EventHandler(this.personalizarToolStripMenuItem_Click);
             // 
@@ -182,25 +182,28 @@
             // contenidoToolStripMenuItem
             // 
             this.contenidoToolStripMenuItem.Name = "contenidoToolStripMenuItem";
-            this.contenidoToolStripMenuItem.Size = new System.Drawing.Size(297, 22);
-            this.contenidoToolStripMenuItem.Text = "&Opciones con tablas de base de datos";
+            this.contenidoToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
+            this.contenidoToolStripMenuItem.Text = "&Operaciones con tablas de base de datos";
+            this.contenidoToolStripMenuItem.Click += new System.EventHandler(this.contenidoToolStripMenuItem_Click);
             // 
             // índiceToolStripMenuItem
             // 
             this.índiceToolStripMenuItem.Name = "índiceToolStripMenuItem";
-            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(297, 22);
+            this.índiceToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
             this.índiceToolStripMenuItem.Text = "&Consultas en la base de datos";
+            this.índiceToolStripMenuItem.Click += new System.EventHandler(this.índiceToolStripMenuItem_Click);
             // 
             // toolStripSeparator5
             // 
             this.toolStripSeparator5.Name = "toolStripSeparator5";
-            this.toolStripSeparator5.Size = new System.Drawing.Size(294, 6);
+            this.toolStripSeparator5.Size = new System.Drawing.Size(313, 6);
             // 
             // buscarToolStripMenuItem
             // 
             this.buscarToolStripMenuItem.Name = "buscarToolStripMenuItem";
-            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(297, 22);
+            this.buscarToolStripMenuItem.Size = new System.Drawing.Size(316, 22);
             this.buscarToolStripMenuItem.Text = "&Repaso de Operaciones";
+            this.buscarToolStripMenuItem.Click += new System.EventHandler(this.buscarToolStripMenuItem_Click);
             // 
             // extrasToolStripMenuItem
             // 
