@@ -16,5 +16,11 @@ namespace pryPonceDeLeonMartinaEstrucDatos
         {
             InitializeComponent();
         }
+
+        private void btnListar_Click(object sender, EventArgs e)
+        {
+            clsBaseDeDatos objBD = new clsBaseDeDatos();
+            objBD.Listar(dgvDatos, txtQuery.Text);
+        }
     }
 }

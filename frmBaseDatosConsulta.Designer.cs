@@ -32,8 +32,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.txtQuery = new System.Windows.Forms.TextBox();
             this.btnListar = new System.Windows.Forms.Button();
-            this.dgvConsulta = new System.Windows.Forms.DataGridView();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).BeginInit();
+            this.dgvDatos = new System.Windows.Forms.DataGridView();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -48,31 +48,33 @@
             // 
             // txtQuery
             // 
+            this.txtQuery.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txtQuery.Location = new System.Drawing.Point(12, 42);
             this.txtQuery.Multiline = true;
             this.txtQuery.Name = "txtQuery";
-            this.txtQuery.Size = new System.Drawing.Size(901, 317);
+            this.txtQuery.Size = new System.Drawing.Size(901, 268);
             this.txtQuery.TabIndex = 1;
             // 
             // btnListar
             // 
             this.btnListar.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
             this.btnListar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.btnListar.Location = new System.Drawing.Point(838, 365);
+            this.btnListar.Location = new System.Drawing.Point(838, 327);
             this.btnListar.Name = "btnListar";
             this.btnListar.Size = new System.Drawing.Size(75, 23);
             this.btnListar.TabIndex = 2;
             this.btnListar.Text = "LISTAR";
             this.btnListar.UseVisualStyleBackColor = false;
+            this.btnListar.Click += new System.EventHandler(this.btnListar_Click);
             // 
-            // dgvConsulta
+            // dgvDatos
             // 
-            this.dgvConsulta.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.dgvConsulta.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvConsulta.Location = new System.Drawing.Point(12, 403);
-            this.dgvConsulta.Name = "dgvConsulta";
-            this.dgvConsulta.Size = new System.Drawing.Size(901, 296);
-            this.dgvConsulta.TabIndex = 3;
+            this.dgvDatos.BackgroundColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.dgvDatos.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgvDatos.Location = new System.Drawing.Point(12, 367);
+            this.dgvDatos.Name = "dgvDatos";
+            this.dgvDatos.Size = new System.Drawing.Size(901, 332);
+            this.dgvDatos.TabIndex = 3;
             // 
             // frmBaseDatosConsulta
             // 
@@ -80,7 +82,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.ClientSize = new System.Drawing.Size(934, 711);
-            this.Controls.Add(this.dgvConsulta);
+            this.Controls.Add(this.dgvDatos);
             this.Controls.Add(this.btnListar);
             this.Controls.Add(this.txtQuery);
             this.Controls.Add(this.label1);
@@ -90,7 +92,7 @@
             this.Name = "frmBaseDatosConsulta";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Base Datos Consulta";
-            ((System.ComponentModel.ISupportInitialize)(this.dgvConsulta)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvDatos)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -101,6 +103,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox txtQuery;
         private System.Windows.Forms.Button btnListar;
-        private System.Windows.Forms.DataGridView dgvConsulta;
+        private System.Windows.Forms.DataGridView dgvDatos;
     }
 }
