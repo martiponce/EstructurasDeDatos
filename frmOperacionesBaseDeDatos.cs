@@ -42,7 +42,7 @@ namespace pryPonceDeLeonMartinaEstrucDatos
          */
         private void btnProyecMultiAtributo_Click(object sender, EventArgs e)
         {
-            String sql = "SELECT TITULO, AUTOR, AÑO " +
+            String sql = "SELECT TITULO,  AÑO, CANTIDAD " +
                 "FROM LIBRO " +
                 "ORDER BY TITULO DESC";
             objBD.Listar(dgvBaseDaos, sql);
@@ -74,7 +74,7 @@ namespace pryPonceDeLeonMartinaEstrucDatos
         private void btnSelecMuliAributo_Click(object sender, EventArgs e)
         {
             String sql = "SELECT * FROM LIBRO " +
-               "WHERE IDAUTOR = 2 AND IDIDIOMA = 3";
+               "WHERE IDAUTOR = 11 AND IDIDIOMA = 7";
             objBD.Listar(dgvBaseDaos, sql);
         }
 
